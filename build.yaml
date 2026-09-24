@@ -21,3 +21,5 @@
 include:
   - board: nice_nano_v2
     shield: vibeboard
+  - board: nice_nano_v2
+    shield: settings_reset
