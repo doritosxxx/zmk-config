@@ -21,4 +21,3 @@
 include:
   - board: nice_nano_v2
     shield: vibeboard
-    snippet: zmk-usb-logging
