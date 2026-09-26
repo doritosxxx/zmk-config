@@ -1,2 +1,0 @@
-config SHIELD_VIBEBOARD
-    def_bool $(shields_list_contains, vibeboard)
