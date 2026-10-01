@@ -9,7 +9,7 @@
         codex_change_model: codex_change_model {
             compatible = "zmk,keymap";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp m &kp o &kp d &kp e &kp l>;
+            bindings = <&macro_tap &kp SLASH &kp m &kp o &kp d &kp e &kp l>;
         }
     };
 
