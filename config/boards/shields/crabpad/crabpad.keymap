@@ -9,8 +9,8 @@
         codex_change_model: codex_change_model {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings = <&kp SLASH &kp M &kp O &kp D &kp E &kp L>;
         };
     };
