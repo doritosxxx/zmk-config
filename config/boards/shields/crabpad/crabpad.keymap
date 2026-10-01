@@ -9,8 +9,10 @@
         codex_change_model: codex_change_model {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp SLASH &kp m &kp o &kp d &kp e &kp l>;
-        }
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&kp SLASH &kp M &kp O &kp D &kp E &kp L>;
+        };
     };
 
     keymap {
@@ -18,7 +20,7 @@
 
         default_layer {
             bindings = <
-                &bt RALT         &bt LS(TAB)            &kp ESC
+                &kp RALT         &kp LS(TAB)            &kp ESC
                 &mo LAYER_FN     &codex_change_model    &kp ENTER
             >;
 
@@ -28,7 +30,7 @@
         fn_layer {
             bindings = <
                 &bt BT_CLR_ALL   &trans   &trans
-                &trans   &trans   &trans
+                &trans           &trans   &trans
             >;
         };
     };
