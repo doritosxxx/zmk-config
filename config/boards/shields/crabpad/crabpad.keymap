@@ -7,7 +7,7 @@
 / {
     macros {
         codex_change_model: codex_change_model {
-            compatible = "zmk,keymap";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SLASH &kp m &kp o &kp d &kp e &kp l>;
         }
