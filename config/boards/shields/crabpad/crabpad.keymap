@@ -2,17 +2,34 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define LAYER_FN 1
+
 / {
+    macros {
+        codex_change_model: codex_change_model {
+            compatible = "zmk,keymap";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp m &kp o &kp d &kp e &kp l>;
+        }
+    }
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &bt BT_CLR_ALL   &bt BT_SEL 1   &kp C
-                &kp D   &kp E   &kp F
+                &bt RALT         &bt LS(TAB)            &kp ESC
+                &mo LAYER_FN     &codex_change_model    &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+        };
+
+        fn_layer {
+            bindings = <
+                &bt BT_CLR_ALL   &trans   &trans
+                &trans   &trans   &trans
+            >;
         };
     };
 };
