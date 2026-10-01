@@ -11,7 +11,7 @@
             #binding-cells = <0>;
             bindings = <&kp SLASH &kp m &kp o &kp d &kp e &kp l>;
         }
-    }
+    };
 
     keymap {
         compatible = "zmk,keymap";
