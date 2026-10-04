@@ -29,9 +29,11 @@
 
         fn_layer {
             bindings = <
-                &bt BT_CLR_ALL   &trans   &trans
-                &trans           &trans   &trans
+                &bt BT_CLR_ALL   &trans         &kp LC(BACKSPACE)
+                &trans           &kp LC(LEFT)   &kp LC(RIGHT)
             >;
+
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
     };
 };
